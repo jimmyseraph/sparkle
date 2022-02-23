@@ -1,0 +1,10 @@
+*.log
+*.out
+
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+build
+.scannerwork

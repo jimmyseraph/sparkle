@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = "demo3/proto;proto";
+
+service Hello {
+    rpc SayHi (SayHiRequest) returns (SayHiReply);
+}
+
+message SayHiRequest {
+    string name = 1;
+    int32 age = 2;
+}
+
+message SayHiReply {
+    int32 code = 1;
+    string message = 2;
+}
