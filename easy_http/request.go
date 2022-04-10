@@ -31,6 +31,9 @@ type requestHandler struct {
 	log            *zap.Logger
 }
 
+/*
+核心配置结构
+*/
 type RequestConfig struct {
 	Http2          bool
 	Headers        map[string][]string
